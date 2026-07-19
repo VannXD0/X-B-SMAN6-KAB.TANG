@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X-B — SMAN 6 Kab. Tangerang</title>
+  <meta name="description" content="Portal resmi kelas X-B SMAN 6 Kabupaten Tangerang. Profil siswa, siswi, wali kelas, dan memori kelas 2026/2027.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/3/3.1.1/iconify.min.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════
+       NAVBAR
+  ═══════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Navigasi Utama">
+    <div class="nav-brand">
+      <span class="brand-badge" aria-hidden="true">X-B</span>
+      <div class="brand-text">
+        <span class="brand-class">Kelas X-B</span>
+        <span class="brand-school">SMAN 6 Kab. Tangerang</span>
+      </div>
+    </div>
+
+    <div class="nav-tabs" role="tablist">
+      <button class="tab-btn active" data-tab="beranda" role="tab" aria-selected="true" id="tab-beranda">
+        <iconify-icon icon="solar:home-2-bold" aria-hidden="true"></iconify-icon>
+        <span>Beranda</span>
+      </button>
+      <button class="tab-btn" data-tab="siswa" role="tab" aria-selected="false" id="tab-siswa">
+        <iconify-icon icon="solar:user-bold" aria-hidden="true"></iconify-icon>
+        <span>Siswa</span>
+      </button>
+      <button class="tab-btn" data-tab="siswi" role="tab" aria-selected="false" id="tab-siswi">
+        <iconify-icon icon="solar:user-bold" aria-hidden="true"></iconify-icon>
+        <span>Siswi</span>
+      </button>
+      <button class="tab-btn" data-tab="walas" role="tab" aria-selected="false" id="tab-walas">
+        <iconify-icon icon="solar:star-bold" aria-hidden="true"></iconify-icon>
+        <span>Wali Kelas</span>
+      </button>
+      <button class="tab-btn" data-tab="memori" role="tab" aria-selected="false" id="tab-memori">
+        <iconify-icon icon="solar:gallery-bold" aria-hidden="true"></iconify-icon>
+        <span>Memori</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════
+         BERANDA
+    ═══════════════════════════════ -->
+    <section id="beranda" class="section active" role="tabpanel" aria-labelledby="tab-beranda">
+
+      <div class="bg-shapes" aria-hidden="true">
+        <div class="shape s1"></div>
+        <div class="shape s2"></div>
+        <div class="shape s3"></div>
+        <div class="shape s4"></div>
+        <div class="shape s5"></div>
+        <div class="shape s6"></div>
+      </div>
+
+      <div class="hero">
+        <p class="hero-tag">
+          <iconify-icon icon="solar:star-bold-duotone" aria-hidden="true"></iconify-icon>
+          Tahun Ajaran 2026 / 2027
+        </p>
+        <h1 class="hero-title">
+          <span class="ht-sub">Kelas</span>
+          <span class="ht-main">X-B</span>
+        </h1>
+        <div class="hero-school-tag">
+          <iconify-icon icon="solar:buildings-3-bold" aria-hidden="true"></iconify-icon>
+          SMAN 6 Kabupaten Tangerang
+        </div>
+
+        <div class="hero-stats" aria-label="Statistik kelas">
+          <div class="stat-item">
+            <span class="stat-n" id="st-siswa">—</span>
+            <span class="stat-l">Siswa</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-n" id="st-siswi">—</span>
+            <span class="stat-l">Siswi</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-n" id="st-total">—</span>
+            <span class="stat-l">Total</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <button class="btn btn-dark" onclick="switchTab('siswa')">
+            Lihat Profil Siswa
+            <iconify-icon icon="solar:arrow-right-bold" aria-hidden="true"></iconify-icon>
+          </button>
+          <a href="https://www.instagram.com/x.2_andromeda?ighs=NHV4c2NxOTZ1aWZ0" target="_blank" rel="noopener noreferrer" class="btn btn-outline instagram-link" aria-label="Instagram Kelas">
+            <iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon>
+            <span>Instagram Kelas</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Marquee ticker -->
+      <div class="marquee-bar" aria-hidden="true">
+        <div class="marquee-inner">
+          <span>X-B</span><span class="mx-dot"></span>
+          <span>SMAN 6 KAB. TANGERANG</span><span class="mx-dot"></span>
+          <span>2026 / 2027</span><span class="mx-dot"></span>
+          <span>WALI KELAS: YUDHA AGUSTIAN, S.Pd</span><span class="mx-dot"></span>
+          <span>SOLID &amp; BERPRESTASI</span><span class="mx-dot"></span>
+          <span>X-B</span><span class="mx-dot"></span>
+          <span>SMAN 6 KAB. TANGERANG</span><span class="mx-dot"></span>
+          <span>2026 / 2027</span><span class="mx-dot"></span>
+          <span>WALI KELAS: YUDHA AGUSTIAN, S.Pd</span><span class="mx-dot"></span>
+          <span>SOLID &amp; BERPRESTASI</span><span class="mx-dot"></span>
+        </div>
+      </div>
+
+      <!-- Bento abstract grid -->
+      <div class="bento" aria-label="Semangat kelas X-B">
+        <div class="bento-item bi-a">
+          <iconify-icon icon="solar:book-bold-duotone" aria-hidden="true"></iconify-icon>
+          <strong>Belajar</strong>
+          <span>Rajin &amp; tekun</span>
+        </div>
+        <div class="bento-item bi-b">
+          <iconify-icon icon="solar:fire-bold-duotone" aria-hidden="true"></iconify-icon>
+          <strong>Semangat</strong>
+          <span>Pantang menyerah</span>
+        </div>
+        <div class="bento-item bi-c">
+          <iconify-icon icon="solar:users-group-rounded-bold-duotone" aria-hidden="true"></iconify-icon>
+          <strong>Solid</strong>
+          <span>Kuat bersama</span>
+        </div>
+        <div class="bento-item bi-d">
+          <iconify-icon icon="solar:cup-star-bold-duotone" aria-hidden="true"></iconify-icon>
+          <strong>Berprestasi</strong>
+          <span>Raih yang terbaik</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════
+         SISWA
+    ═══════════════════════════════ -->
+    <section id="siswa" class="section" role="tabpanel" aria-labelledby="tab-siswa">
+      <header class="sec-header">
+        <div>
+          <h2 class="sec-title">Daftar <em>Siswa</em></h2>
+          <p class="sec-sub" id="siswa-count">Memuat data...</p>
+        </div>
+        <label class="search-box" for="q-siswa" aria-label="Cari siswa">
+          <iconify-icon icon="solar:magnifer-bold" aria-hidden="true"></iconify-icon>
+          <input type="search" id="q-siswa" placeholder="Cari nama siswa...">
+        </label>
+      </header>
+      <div class="grid" id="grid-siswa" role="list">
+        <div class="loading-msg" role="status">
+          <div class="spinner" aria-hidden="true"></div>
+          <p>Memuat data siswa...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         SISWI
+    ═══════════════════════════════ -->
+    <section id="siswi" class="section" role="tabpanel" aria-labelledby="tab-siswi">
+      <header class="sec-header">
+        <div>
+          <h2 class="sec-title">Daftar <em>Siswi</em></h2>
+          <p class="sec-sub" id="siswi-count">Memuat data...</p>
+        </div>
+        <label class="search-box" for="q-siswi" aria-label="Cari siswi">
+          <iconify-icon icon="solar:magnifer-bold" aria-hidden="true"></iconify-icon>
+          <input type="search" id="q-siswi" placeholder="Cari nama siswi...">
+        </label>
+      </header>
+      <div class="grid" id="grid-siswi" role="list">
+        <div class="loading-msg" role="status">
+          <div class="spinner" aria-hidden="true"></div>
+          <p>Memuat data siswi...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         WALI KELAS
+    ═══════════════════════════════ -->
+    <section id="walas" class="section" role="tabpanel" aria-labelledby="tab-walas">
+      <header class="sec-header">
+        <div>
+          <h2 class="sec-title">Wali <em>Kelas</em></h2>
+          <p class="sec-sub">Pembimbing kelas X-B</p>
+        </div>
+      </header>
+      <div id="walas-wrap">
+        <div class="loading-msg" role="status" style="grid-column:1/-1">
+          <div class="spinner" aria-hidden="true"></div>
+          <p>Memuat data...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         MEMORI KELAS
+    ═══════════════════════════════ -->
+    <section id="memori" class="section" role="tabpanel" aria-labelledby="tab-memori">
+      <header class="sec-header">
+        <div>
+          <h2 class="sec-title">Memori <em>Kelas</em></h2>
+          <p class="sec-sub">Potret perjalanan kita bersama di X-B</p>
+        </div>
+      </header>
+      <div class="gallery" id="gallery" role="list">
+        <div class="loading-msg" style="grid-column:1/-1" role="status">
+          <div class="spinner" aria-hidden="true"></div>
+          <p>Memuat foto...</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════
+       FOOTER / CREDIT
+  ═══════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 X-B SMAN 6 Kab. Tangerang. All Rights Reserved.</p>
+      <p class="credit-text">Created by <span class="author-badge">Revan / Vanx</span></p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════
+       MODAL DETAIL SISWA
+  ═══════════════════════════════ -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Detail Profil" hidden>
+    <div class="modal-backdrop" onclick="closeModal()"></div>
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal()" aria-label="Tutup dialog">
+        <iconify-icon icon="solar:close-square-bold" aria-hidden="true"></iconify-icon>
+      </button>
+      <div class="modal-photo">
+        <img id="m-photo" src="" alt="Foto profil">
+        <div class="modal-photo-fallback" id="m-fallback" aria-hidden="true">
+          <iconify-icon icon="solar:user-circle-bold"></iconify-icon>
+        </div>
+      </div>
+      <div class="modal-body">
+        <span class="modal-badge" id="m-badge"></span>
+        <h3 class="modal-name" id="m-name"></h3>
+        <div class="modal-fields">
+          <div class="field-row">
+            <span class="field-icon" style="background:var(--blue)" aria-hidden="true">
+              <iconify-icon icon="solar:buildings-2-bold"></iconify-icon>
+            </span>
+            <div>
+              <span class="field-label">Asal Sekolah</span>
+              <span class="field-val" id="m-asal"></span>
+            </div>
+          </div>
+          <div class="field-row">
+            <span class="field-icon" style="background:var(--pink)" aria-hidden="true">
+              <iconify-icon icon="solar:heart-bold"></iconify-icon>
+            </span>
+            <div>
+              <span class="field-label">Hobi</span>
+              <span class="field-val" id="m-hobi"></span>
+            </div>
+          </div>
+          <div class="field-row">
+            <span class="field-icon" style="background:var(--orange)" aria-hidden="true">
+              <iconify-icon icon="solar:rocket-bold"></iconify-icon>
+            </span>
+            <div>
+              <span class="field-label">Cita-cita</span>
+              <span class="field-val" id="m-cita"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       LIGHTBOX GALERI
+  ═══════════════════════════════ -->
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Lihat foto">
+    <div class="lb-backdrop" onclick="closeLightbox()"></div>
+    <button class="lb-close" onclick="closeLightbox()" aria-label="Tutup foto">
+      <iconify-icon icon="solar:close-circle-bold" aria-hidden="true"></iconify-icon>
+    </button>
+    <div class="lb-img-wrap">
+      <img id="lb-img" src="" alt="Memori kelas X-B">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
